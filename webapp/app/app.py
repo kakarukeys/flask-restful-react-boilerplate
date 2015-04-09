@@ -18,11 +18,11 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    # serve static files for development purpose
-    build_dir = os.path.abspath(__file__ + "/../../build/")
+    # serve files for running tests in browser
+    bdd_dir = os.path.abspath(__file__ + "/../../bdd/")
 
-    @app.route('/<path:path>')
-    def send_build_file(path):
-        return send_from_directory(build_dir, path)
+    @app.route("/<path:path>")
+    def send_bdd_file(path):
+        return send_from_directory(bdd_dir, path)
 
     app.run(debug=True)

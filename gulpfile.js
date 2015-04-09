@@ -152,13 +152,13 @@ gulp.task('default', function () {
   browserifyTask({
     development: true,
     src: './jsx/main.js',
-    dest: './build'
+    dest: './webapp/app/static'
   });
 
   cssTask({
     development: true,
     src: './styles/**/*.css',
-    dest: './build'
+    dest: './webapp/app/static'
   });
 
 });
@@ -168,17 +168,17 @@ gulp.task('deploy', function () {
   browserifyTask({
     development: false,
     src: './jsx/main.js',
-    dest: './dist'
+    dest: './webapp/app/static'
   });
 
   cssTask({
     development: false,
     src: './styles/**/*.css',
-    dest: './dist'
+    dest: './webapp/app/static'
   });
 
 });
 
 gulp.task('test', function () {
-    return gulp.src('./build/testrunner-phantomjs.html').pipe(jasminePhantomJs());
+    return gulp.src('./bdd/testrunner-phantomjs.html').pipe(jasminePhantomJs());
 });
