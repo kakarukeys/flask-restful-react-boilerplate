@@ -9,7 +9,7 @@ api = restful.Api(app)
 
 class HelloWorld(restful.Resource):
     def get(self):
-        return {"hello": "world"}
+        return {"messages": ["I left a message", "I left a second message"]}
 
 api.add_resource(HelloWorld, '/api/query')
 
