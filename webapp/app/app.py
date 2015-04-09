@@ -19,9 +19,9 @@ def index():
 
 if __name__ == "__main__":
     # serve files for running tests in browser
-    bdd_dir = os.path.abspath(__file__ + "/../../bdd/")
+    bdd_dir = os.path.abspath(__file__ + "/../../../bdd/")
 
-    @app.route("/<path:path>")
+    @app.route("/bdd/<path:path>")
     def send_bdd_file(path):
         return send_from_directory(bdd_dir, path)
 

@@ -1,25 +1,27 @@
-## FLUX React JS Boilerplate
-
-Based on the architecture suggestions from Facebook, this boilerplate will help you deal with it. It has included the flux-react extension to React JS, [flux-react](https://github.com/christianalfoni/flux-react). 
-
-Read more about FLUX over at [Facebook Flux](http://facebook.github.io/flux/) and I wrote a post about it too: [My experiences building a FLUX application](http://christianalfoni.github.io/javascript/2014/10/27/my-experiences-building-a-flux-application.html) and [React JS and FLUX](http://christianalfoni.github.io/javascript/2014/08/20/react-js-and-flux.html)
+## Flask-RESTful-React Boilerplate
 
 ### Development
 * Run `npm install`
-* Run `gulp`
-* Start a webservice in the `build` folder, f.ex. `python -m SimpleHTTPServer`
-* Go to `localhost:8000` to display the app
-* Go to `localhost:8000/testrunner.html` to see your tests
+* Run `node_modules/gulp/bin/gulp.js`
+* Run `mkvirtualenv -p /usr/bin/python3.3 full_stack_study`
+* Change to `webapp` directory
+* Run `python app/app.py`
+* Go to `localhost:5000` to display the app
+* Go to `localhost:5000/bdd/testrunner.html` to see your tests
 * Any changes to `app` or `styles` folder will automatically rebuild to `build` folder
 * Both tests and application changes will refresh automatically in the browser
-* Run `gulp test` to run all tests with phantomJS and produce XML reports
+* Run `node_modules/gulp/bin/gulp.js test` to run all tests with phantomJS and produce XML reports
 
-### Minify the code, ready for production
-* Run `gulp deploy`
+### Deployment
+* Run `node_modules/gulp/bin/gulp.js deploy` to prepare js,css files for production
+* Run `docker build -t full_stack_study` to build the image
+* Run `docker run -p 80:80 -dt full_stack_study` to start the container
 
 ### Directory
-* **build/**: Where your automatically builds to. This is where you launch your app in development
-* **dist/**: Where the deployed code exists, ready for production
-* **styles/**: Where you put your css files
+* **jsx**: Where you edit your UI scripts
 * **specs/**: Where you put your test files
-* **gulpfile**: Gulp configuration
+* **styles/**: Where you put your css files
+* **webapp/app**: Where you edit your flask code
+* **webapp**: Where you put your deployment files
+* **webapp/app/static**: Where your js,css automatically builds to.
+* **gulpfile.js**: Gulp configuration
