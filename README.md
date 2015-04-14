@@ -3,8 +3,9 @@
 ### Development
 * Run `npm install`
 * Run `node_modules/gulp/bin/gulp.js`
-* Run `mkvirtualenv -p /usr/bin/python3.3 full_stack_study`
+* Run `mkvirtualenv -p /usr/bin/python3.3 full_stack_study`, where full_stack_study is your virtual environment name.
 * Change to `webapp` directory
+* Run `pip install -r requirements.txt`
 * Run `python app/app.py`
 * Go to `localhost:5000` to display the app
 * Go to `localhost:5000/bdd/testrunner.html` to see your tests
