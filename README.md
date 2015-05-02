@@ -1,5 +1,7 @@
 ## Flask-RESTful-React Boilerplate
 
+comes with Underscore, jQuery, Twitter Bootstrap 3.
+
 ### Development
 * Run `npm install`
 * Run `node_modules/gulp/bin/gulp.js`
@@ -12,6 +14,8 @@
 * Any changes to `app` or `styles` folder will automatically rebuild to `build` folder
 * Both tests and application changes will refresh automatically in the browser
 * Run `node_modules/gulp/bin/gulp.js test` to run all tests with phantomJS and produce XML reports
+* Run `bower install <package> --save` to install bower dependencies into 
+* Edit `webapp/app/templates/index.html` to wire up lib js/css files `webapp/app/static/lib/` folder
 
 ### Deployment
 * Run `node_modules/gulp/bin/gulp.js deploy` to prepare js,css files for production

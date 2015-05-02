@@ -1,6 +1,7 @@
 {
   "name": "flask-restful-react-boilerplate",
   "version": "0.0.1",
+  "description": "A boilerplate for bootstrapping Flask Restful React project",
   "authors": [
     "Wong Jiang Fung <kakarukeys@gmail.com>"
   ],

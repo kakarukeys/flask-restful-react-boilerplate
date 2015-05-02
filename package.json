@@ -1,9 +1,10 @@
 {
-  "name": "flux-react-boilerplate",
-  "version": "3.0.0",
-  "description": "React application boilerplate",
-  "author": "Christian Alfoni",
-  "license": "ISC",
+  "name": "flask-restful-react-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate for bootstrapping Flask Restful React project",
+  "authors": [
+    "Wong Jiang Fung <kakarukeys@gmail.com>"
+  ],
   "devDependencies": {
     "browserify": "^6.2.0",
     "glob": "^4.0.6",

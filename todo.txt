@@ -1,17 +1,17 @@
 make sure test passes in http://localhost:5000/bdd/testrunner.html
 find out the usage of http://localhost:5000/bdd/testrunner-phantomjs.html
 practise more react by building a crossfilter viz (commit only the simplest example to git repo)
-improve gulp automation
-find a better way for asset compilation
-upgrade package.json
 find out if live reload js is activated at production
 a better app.py?
 develop flask app to provide the data required to frontend
 upgrade docker deployment
-upgrade packages in package.json
 upgrade jasmine to latest
 upgrade jasmine2-junit
-delete bdd/jasmine/spec, bdd/jasmine/src, mit licence, SpecRunner
-learn LESS
+upgrade, clean up packages in package.json
+learn LESS OR SASS
 make use of CDN to serve library js files
-copy only dist files of bower components into webapp/app/static
+
+improve gulp automation
+	find a better way for asset compilation
+		copy only dist files of bower components into webapp/app/static
+		automatically wire minified lib js/css files into index.html or pack with other into single js/css minified file
