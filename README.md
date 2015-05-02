@@ -4,6 +4,7 @@ comes with Underscore, jQuery, Twitter Bootstrap 3.
 
 ### Development
 * Run `npm install`
+* Run `bower install`
 * Run `node_modules/gulp/bin/gulp.js`
 * Run `mkvirtualenv -p /usr/bin/python3.3 full_stack_study`, where full_stack_study is your virtual environment name.
 * Change to `webapp` directory
