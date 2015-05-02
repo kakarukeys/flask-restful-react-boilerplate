@@ -11,11 +11,11 @@ comes with Underscore, jQuery, Twitter Bootstrap 3.
 * Run `python app/app.py`
 * Go to `localhost:5000` to display the app
 * Go to `localhost:5000/bdd/testrunner.html` to see your tests
-* Any changes to `app` or `styles` folder will automatically rebuild to `build` folder
+* Any changes to `app` or `styles` folder will automatically rebuild to `webapp/app/static/` folder
 * Both tests and application changes will refresh automatically in the browser
 * Run `node_modules/gulp/bin/gulp.js test` to run all tests with phantomJS and produce XML reports
-* Run `bower install <package> --save` to install bower dependencies into 
-* Edit `webapp/app/templates/index.html` to wire up lib js/css files `webapp/app/static/lib/` folder
+* Run `bower install <package> --save` to install bower dependencies into `webapp/app/static/lib/` folder
+* Edit `webapp/app/templates/index.html` to wire up lib js/css files 
 
 ### Deployment
 * Run `node_modules/gulp/bin/gulp.js deploy` to prepare js,css files for production
@@ -29,4 +29,5 @@ comes with Underscore, jQuery, Twitter Bootstrap 3.
 * **webapp/app**: Where you edit your flask code
 * **webapp**: Where you put your deployment files
 * **webapp/app/static**: Where your js,css automatically builds to.
+* **webapp/app/static/lib**: Where your bower components go to.
 * **gulpfile.js**: Gulp configuration

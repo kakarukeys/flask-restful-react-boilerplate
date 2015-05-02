@@ -12,6 +12,7 @@ learn LESS OR SASS
 make use of CDN to serve library js files
 
 improve gulp automation
+	watch css changes and reload browser
 	find a better way for asset compilation
 		copy only dist files of bower components into webapp/app/static
 		automatically wire minified lib js/css files into index.html or pack with other into single js/css minified file
