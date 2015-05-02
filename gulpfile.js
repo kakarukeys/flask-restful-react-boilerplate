@@ -19,7 +19,8 @@ var jasminePhantomJs = require('gulp-jasmine2-phantomjs');
 // but include in your application deployment
 var dependencies = [
 	'react',
-  'react/addons'
+  'react/addons',
+  'underscore'
 ];
 
 var browserifyTask = function (options) {
