@@ -1,0 +1,11 @@
+{
+  "name": "flask-restful-react-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Wong Jiang Fung <kakarukeys@gmail.com>"
+  ],
+  "dependencies": {
+  	"jquery": "~1.11.2",
+    "bootstrap": "~3.3.4"
+  }
+}

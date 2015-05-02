@@ -18,12 +18,18 @@ var App = React.createClass({
 
   render: function() {
     return (
-      <div>
-        <ul>
-          {_.map(this.state.messages, function(msg, i) {
-            return (<li key={ i }>{ msg }</li>);
-          })}
-        </ul>
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-body">
+            <h3>Messages from the back:</h3>
+            <ul>
+              {_.map(this.state.messages, function(msg, i) {
+                return (<li key={ i }>{ msg }</li>);
+              })}
+            </ul>
+            <p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,3 +1,4 @@
 node_modules/
 webapp/app/static/*.css
 webapp/app/static/*.js
+webapp/app/static/lib/
