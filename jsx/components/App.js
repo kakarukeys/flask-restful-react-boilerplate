@@ -1,7 +1,12 @@
-/** @jsx React.DOM */
+"use strict";
+
 var React = require("react"),
-    _ = require("underscore"),
-    handlers = require("./../handlers");
+    dispatcher = require("./../dispatcher"),
+    process = require("./../handlers"),
+    CompanyFilter = require("./CompanyFilter"),
+    rd3 = require('react-d3');
+
+/* The primary app component */
 
 var App = React.createClass({
   getInitialState: function() {
@@ -11,24 +16,35 @@ var App = React.createClass({
   componentWillMount: function() {
     var that = this;
 
-    handlers.loadData().then(function(response) {
-      that.setState(response);
+    // update app state on all events
+    dispatcher.on("all", function(eventName, eventArgs) {
+      that.setState(process(that.state, eventName, eventArgs));
     });
   },
 
+  filterData: function(data, filters) {
+    var applicableFilters = _.object(_.filter(_.pairs(filters), 1));
+
+    return _.where(data, applicableFilters);
+  },
+
   render: function() {
+    var Treemap = rd3.Treemap;
+
     return (
       <div className="container">
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <h3>Messages from the back:</h3>
-            <ul>
-              {_.map(this.state.messages, function(msg, i) {
-                return (<li key={ i }>{ msg }</li>);
-              })}
-            </ul>
-            <p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-          </div>
+        <div className="row">
+          <h2>Handphone sales volume in last 24 hours</h2>
+
+          <CompanyFilter selected={this.state.filters.company} />
+
+          <Treemap
+            data={this.filterData(this.state.data, this.state.filters)}
+            width={1000}
+            height={400}
+            textColor="#484848"
+            fontSize="12px"
+          />
         </div>
       </div>
     );

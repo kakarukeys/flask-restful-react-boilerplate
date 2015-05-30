@@ -1,8 +1,8 @@
-practise more react by building a crossfilter viz (commit only the simplest example to git repo)
 find out if live reload js is activated at production
 a better app.py?
 develop flask app to provide the data required to frontend
 upgrade docker deployment
+integrate with a router to have URIs
 upgrade jasmine to latest
 upgrade jasmine2-junit
 upgrade, clean up packages in package.json
