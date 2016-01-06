@@ -3,6 +3,7 @@
 var React = require("react"),
     dispatcher = require("./../dispatcher"),
     process = require("./../handlers"),
+    Landing = require("./Landing"),
     Viz = require("./Viz");
 
 /* The primary app component */
@@ -22,7 +23,8 @@ var App = React.createClass({
   },
 
   render: function() {
-    return React.createElement(Viz, _.pick(this.state, "filters", "data"));
+    return (<Landing />);
+    //return React.createElement(Viz, _.pick(this.state, "filters", "data"));
   }
 });
 

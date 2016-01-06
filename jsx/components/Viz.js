@@ -18,19 +18,17 @@ var Viz = React.createClass({
 
     return (
       <div className="container">
-        <div className="row">
-          <h2>Handphone sales volume in last 24 hours</h2>
+        <h2>Handphone sales volume in last 24 hours</h2>
 
-          <CompanyFilter selected={this.props.filters.company} />
+        <CompanyFilter selected={this.props.filters.company} />
 
-          <Treemap
-            data={this.filterData(this.props.data, this.props.filters)}
-            width={1000}
-            height={400}
-            textColor="#484848"
-            fontSize="12px"
-          />
-        </div>
+        <Treemap
+          data={this.filterData(this.props.data, this.props.filters)}
+          width={1000}
+          height={400}
+          textColor="#484848"
+          fontSize="12px"
+        />
       </div>
     );
   }
