@@ -6,9 +6,9 @@
     "Wong Jiang Fung <kakarukeys@gmail.com>"
   ],
   "dependencies": {
-    "jquery": "~1.11.2",
+    "jquery": "~1.11.3",
     "underscore": "~1.8.3",
-    "bootstrap": "~3.3.4",
-    "backbone": "~1.2.0"
+    "bootstrap": "~3.3.6",
+    "backbone": "~1.2.3"
   }
 }

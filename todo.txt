@@ -1,4 +1,3 @@
-find out if live reload js is activated at production
 a better app.py?
 develop flask app to provide the data required to frontend
 upgrade docker deployment
@@ -15,3 +14,5 @@ improve gulp automation
 		copy only dist files of bower components into webapp/app/static
 		automatically wire minified lib js/css files into index.html or pack with other into single js/css minified file
 	run tests with karma
+
+not show live reload js at production

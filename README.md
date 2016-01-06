@@ -16,11 +16,11 @@ comes with Underscore, jQuery, Twitter Bootstrap 3.
 * Both tests and application changes will refresh automatically in the browser
 * Run `node_modules/gulp/bin/gulp.js test` to run all tests with phantomJS and produce XML reports
 * Run `bower install <package> --save` to install bower dependencies into `webapp/app/static/lib/` folder
-* Edit `webapp/app/templates/index.html` to wire up lib js/css files 
+* Edit `webapp/app/templates/index.html` to wire up lib js/css files
 
 ### Deployment
 * Run `node_modules/gulp/bin/gulp.js deploy` to prepare js,css files for production
-* Run `docker build -t full_stack_study` to build the image
+* Run `docker build -t full_stack_study .` to build the image
 * Run `docker run -p 80:80 -dt full_stack_study` to start the container
 
 ### Directory
