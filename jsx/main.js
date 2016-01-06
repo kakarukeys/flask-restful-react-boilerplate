@@ -5,4 +5,4 @@ var React = require('react'),
 
 /* bind main app component to DOM */
 
-ReactDOM.render(<App initialState={ initialState } />, document.getElementById("app"));
+ReactDOM.render(React.createElement(App, {initialState: initialState}), document.getElementById("app"));
