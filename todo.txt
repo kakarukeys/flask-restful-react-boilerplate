@@ -1,18 +1,17 @@
-a better app.py?
 develop flask app to provide the data required to frontend
-upgrade docker deployment
-integrate with a router to have URIs
-upgrade jasmine to latest
-upgrade jasmine2-junit
+explore flask restful authentication
+update unit-tests
+explore isomorphic js
+explore offline mode
+explore realtime web communication
+explore redux
+not show live reload js at production
 upgrade, clean up packages in package.json
-learn LESS OR SASS
-make use of CDN to serve library js files
-
 improve gulp automation
 	watch css changes and reload browser
 	find a better way for asset compilation
 		copy only dist files of bower components into webapp/app/static
 		automatically wire minified lib js/css files into index.html or pack with other into single js/css minified file
 	run tests with karma
-
-not show live reload js at production
+upgrade jasmine2-junit
+upgrade docker deployment

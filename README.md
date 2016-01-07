@@ -1,6 +1,17 @@
 ## Flask-RESTful-React Boilerplate
 
-comes with Underscore, jQuery, Twitter Bootstrap 3.
+comes with
+* React 0.14
+* Backbone Router for url routing
+* Backbone Events for component-component
+* Jasmine for unit-testing
+* Underscore
+* jQuery
+* Twitter Bootstrap
+* Flask RESTful for API server
+* Docker for deployment
+
+No flux, redux.
 
 ### Development
 * Run `npm install`
@@ -15,6 +26,7 @@ comes with Underscore, jQuery, Twitter Bootstrap 3.
 * Any changes to `app` or `styles` folder will automatically rebuild to `webapp/app/static/` folder
 * Both tests and application changes will refresh automatically in the browser
 * Run `node_modules/gulp/bin/gulp.js test` to run all tests with phantomJS and produce XML reports
+* Run `npm install --save <package>` to install React related packages
 * Run `bower install <package> --save` to install bower dependencies into `webapp/app/static/lib/` folder
 * Edit `webapp/app/templates/index.html` to wire up lib js/css files
 
