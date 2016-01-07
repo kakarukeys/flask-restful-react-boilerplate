@@ -1,5 +1,7 @@
 ## Flask-RESTful-React Boilerplate
 
+Simple React-Restful webservices architecture.
+
 comes with
 * React 0.14
 * Backbone Router for url routing
