@@ -1,7 +1,7 @@
 "use strict";
 
-var React = require("react"),
-    dispatcher = require("./../dispatcher");
+var dispatcher = require("../backbone/dispatcher"),
+    React = require("react");
 
 /* radiobox to select company */
 

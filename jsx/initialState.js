@@ -1,3 +1,5 @@
+"use strict";
+
 /* the initial app state */
 
 var initialState = {
@@ -17,7 +19,8 @@ var initialState = {
     {company: "BlackBerry", label: "BlackBerry Passport", value: 7000},
     {company: "LG", label: "LG G Flex2", value: 8000}
   ],
-  filters: {company: ''}
+  filters: {company: ''},
+  activeRoute: {name: "landing", routeParams: []}
 };
 
 module.exports = initialState;

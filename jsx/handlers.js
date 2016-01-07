@@ -6,6 +6,11 @@ var handlers = {
   filterChange: function(appState, eventArgs) {
     appState.filters[eventArgs.name] = eventArgs.value;
     return appState;
+  },
+
+  route: function(appState, eventArgs) {
+    appState.activeRoute = eventArgs;
+    return appState;
   }
 };
 

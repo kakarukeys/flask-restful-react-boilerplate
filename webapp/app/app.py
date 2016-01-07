@@ -13,16 +13,22 @@ class HelloWorld(restful.Resource):
 
 api.add_resource(HelloWorld, '/api/query')
 
-@app.route('/')
-def index():
-    return render_template("index.html")
-
 if __name__ == "__main__":
     # serve files for running tests in browser
-    bdd_dir = os.path.abspath(__file__ + "/../../../bdd/")
+    bdd_dir = os.path.join(__file__, "../../../bdd/")
 
     @app.route("/bdd/<path:path>")
     def send_bdd_file(path):
         return send_from_directory(bdd_dir, path)
+
+    # serve js/css/img files
+    @app.route("/static/<path:path>")
+    def serve_static(path):
+        return send_from_directory("static", path)
+
+    @app.route('/', defaults={'path': ''})
+    @app.route('/<path:path>')
+    def index(path):
+        return render_template("index.html")
 
     app.run(debug=True)

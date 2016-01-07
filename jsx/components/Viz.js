@@ -1,8 +1,8 @@
 "use strict";
 
 var React = require("react"),
-    CompanyFilter = require("./CompanyFilter"),
-    rd3 = require('react-d3');
+    rd3 = require('react-d3'),
+    CompanyFilter = require("./CompanyFilter");
 
 /* The visualization component */
 
@@ -18,6 +18,7 @@ var Viz = React.createClass({
 
     return (
       <div className="container">
+        <a href="">&lt; Home</a>
         <h2>Handphone sales volume in last 24 hours</h2>
 
         <CompanyFilter selected={this.props.filters.company} />
