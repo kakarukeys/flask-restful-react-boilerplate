@@ -5,11 +5,11 @@ Simple React-Restful webservices architecture.
 comes with
 * React 0.14
 * Backbone Router for url routing
-* Backbone Events for component-component
+* Backbone Events for component-component communication
 * Jasmine for unit-testing
 * Underscore
 * jQuery
-* Twitter Bootstrap
+* Twitter Bootstrap 3
 * Flask RESTful for API server
 * Docker for deployment
 
